@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "gather-town-run-run-run",
+  "description": "オンラインバーチャルスペースGatherの拡張機能です。",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {},
+  "author": "kazutake yamamoto",
+  "content_scripts": [
+    {
+      "matches": ["https://app.gather.town/app/*/*"],
+      "js": ["src/main.tsx"]
+    }
+  ]
+}
